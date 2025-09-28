@@ -368,10 +368,8 @@ This project is released under the MIT License. See the [LICENSE](LICENSE) file 
 ### Community
 
 - **Repository**: [github.com/HirulaAbesignha/prompto](https://github.com/HirulaAbesignha/prompto)
-- **Package Registry**: [npmjs.com/package/prompto](https://www.npmjs.com/package/prompto)
-- **Author**: [Your Name]
-- **Email**: your.email@example.com
-- **Website**: [yourwebsite.com](https://yourwebsite.com)
+- **Author**: Hirula Abesignha
+- **Email**: hirulapinibinda01@gmail.com
 
 ### Recognition
 
