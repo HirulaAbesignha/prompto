@@ -3,12 +3,6 @@
 # Prompto CLI
 
 ### Your Ultimate Command Reference Companion
-
-[![NPM Version](https://img.shields.io/npm/v/prompto-cli.svg)](https://www.npmjs.com/package/prompto-cli)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://img.shields.io/npm/dt/prompto-cli.svg)](https://www.npmjs.com/package/prompto-cli)
-[![Node Version](https://img.shields.io/node/v/prompto-cli.svg)](https://nodejs.org)
-
 **Instantly access command references for Git, NPM, Docker, and more—right in your terminal.**
 
 [Installation](#installation) • [Usage](#usage) • [Features](#features) • [Contributing](#contributing)
