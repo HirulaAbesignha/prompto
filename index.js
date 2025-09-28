@@ -182,10 +182,14 @@ const commands = {
   }
   
   const args = process.argv.slice(2);
-  
+
   if (args.length === 0) {
     displayHelp();
   } else {
-    const category = args[0].toLowerCase().replace('-', '');
+    let category = args[0].toLowerCase().replace('-', '');
+    if (category === 'github' && !commands[category]) {
+      category = 'git';
+    }
+    
     displayCommands(category);
   }
