@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const commands = {
     git: {
       name: 'Git/GitHub Commands',
@@ -211,7 +213,6 @@ const commands = {
     displayHelp();
   } else {
     let category = args[0].toLowerCase().replace('-', '');
-    
     if (category === 'github' && !commands[category]) {
       category = 'git';
     }
