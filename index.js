@@ -1,6 +1,29 @@
-#!/usr/bin/env node
-
 const commands = {
+    git: {
+      name: 'Git/GitHub Commands',
+      commands: [
+        { cmd: 'git init', desc: 'Initialize a new Git repository' },
+        { cmd: 'git clone <url>', desc: 'Clone a repository' },
+        { cmd: 'git status', desc: 'Check repository status' },
+        { cmd: 'git add .', desc: 'Stage all changes' },
+        { cmd: 'git add <file>', desc: 'Stage specific file' },
+        { cmd: 'git commit -m "message"', desc: 'Commit staged changes' },
+        { cmd: 'git push', desc: 'Push commits to remote' },
+        { cmd: 'git push origin <branch>', desc: 'Push to specific branch' },
+        { cmd: 'git pull', desc: 'Pull latest changes' },
+        { cmd: 'git branch', desc: 'List all branches' },
+        { cmd: 'git branch <n>', desc: 'Create new branch' },
+        { cmd: 'git checkout <branch>', desc: 'Switch to branch' },
+        { cmd: 'git checkout -b <branch>', desc: 'Create and switch to new branch' },
+        { cmd: 'git merge <branch>', desc: 'Merge branch into current' },
+        { cmd: 'git log', desc: 'View commit history' },
+        { cmd: 'git diff', desc: 'Show unstaged changes' },
+        { cmd: 'git stash', desc: 'Stash current changes' },
+        { cmd: 'git stash pop', desc: 'Apply stashed changes' },
+        { cmd: 'git remote -v', desc: 'View remote repositories' },
+        { cmd: 'git reset --hard', desc: 'Reset to last commit (CAREFUL!)' }
+      ]
+    },
     github: {
       name: 'Git/GitHub Commands',
       commands: [
@@ -157,7 +180,8 @@ const commands = {
     });
     
     console.log('\nExamples:');
-    console.log('  prompto github    - Show Git/GitHub commands');
+    console.log('  prompto git       - Show Git/GitHub commands');
+    console.log('  prompto github    - Show Git/GitHub commands (alias)');
     console.log('  prompto npm       - Show NPM commands');
     console.log('  prompto           - Show this help message\n');
   }
@@ -182,11 +206,12 @@ const commands = {
   }
   
   const args = process.argv.slice(2);
-
+  
   if (args.length === 0) {
     displayHelp();
   } else {
     let category = args[0].toLowerCase().replace('-', '');
+    
     if (category === 'github' && !commands[category]) {
       category = 'git';
     }

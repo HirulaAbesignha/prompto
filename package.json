@@ -1,5 +1,5 @@
 {
-    "name": "prompto",
+    "name": "dev-prompto",
     "version": "1.0.0",
     "description": "Command reference tool for developers",
     "main": "index.js",

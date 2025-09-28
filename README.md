@@ -46,7 +46,7 @@ Prompto is a developer productivity tool that provides quick command reference d
 Install Prompto globally for system-wide access:
 
 ```bash
-npm install -g prompto
+npm install -g dev-prompto
 ```
 
 ### Verification
@@ -62,7 +62,7 @@ prompto
 For project-specific usage:
 
 ```bash
-npm install prompto
+npm install dev-prompto
 npx prompto
 ```
 
