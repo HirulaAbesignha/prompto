@@ -1,43 +1,27 @@
 <div align="center">
 
-# Prompto CLI
+# Prompto
 
-### Your Ultimate Command Reference Companion
-**Instantly access command references for Git, NPM, Docker, and more—right in your terminal.**
+### Command Reference Tool for Developers
+A lightweight command-line interface for instant access to commonly used development commands.
 
-[Installation](#installation) • [Usage](#usage) • [Features](#features) • [Contributing](#contributing)
+[Installation](#installation) • [Usage](#usage) • [Documentation](#documentation) • [Contributing](#contributing)
 
 </div>
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Available Commands](#available-commands)
-- [Examples](#examples)
-- [Development](#development)
-- [Contributing](#contributing)
-- [Changelog](#changelog)
-- [License](#license)
-- [Support](#support)
-
----
-
 ## Overview
 
-**Prompto CLI** is a lightweight, cross-platform command-line tool designed to help developers quickly reference commonly used commands without leaving the terminal or opening a browser. Whether you're working with Git, NPM, Docker, or Python, Prompto provides instant access to essential commands with clear descriptions.
+Prompto is a developer productivity tool that provides quick command reference directly in your terminal. Access Git, NPM, Docker, Python, and other essential commands without leaving your workflow or searching documentation online.
 
-### Why Prompto?
+### Key Benefits
 
-- **Instant Access**: No more context switching to search online
-- **Organized**: Commands grouped by category for easy navigation
-- **Universal**: Works on Windows, macOS, and Linux
-- **Lightweight**: Zero dependencies, minimal footprint
-- **Extensible**: Easy to add your own command categories
+- **Efficiency**: Eliminate context switching and browser searches
+- **Organization**: Commands systematically categorized by tool and purpose  
+- **Portability**: Cross-platform compatibility (Windows, macOS, Linux)
+- **Simplicity**: Zero dependencies, minimal installation footprint
+- **Extensibility**: Straightforward architecture for custom additions
 
 ---
 
@@ -45,40 +29,46 @@
 
 | Feature | Description |
 |---------|-------------|
-| **Multi-Category Support** | Git, NPM, PNPM, Yarn, Docker, Node.js, Python, and System commands |
-| **Cross-Platform** | Compatible with cmd, PowerShell, Bash, Zsh, and Fish |
-| **Clean Interface** | Numbered lists with clear descriptions |
-| **No Dependencies** | Pure Node.js, no external packages required |
-| **Offline Ready** | Works without internet connection |
-| **Fast Lookup** | Instant command reference retrieval |
-| **Easy Extension** | Simple JSON-like structure for adding commands |
+| **Comprehensive Coverage** | Git, NPM, PNPM, Yarn, Docker, Node.js, Python, and System commands |
+| **Shell Compatibility** | Works with cmd, PowerShell, Bash, Zsh, Fish, and other standard shells |
+| **Clear Formatting** | Numbered command lists with concise descriptions |
+| **Zero Dependencies** | Built with pure Node.js without external packages |
+| **Offline Functionality** | Complete reference available without internet access |
+| **Performance** | Instant command retrieval with minimal overhead |
+| **Maintainability** | Simple data structure for easy updates and extensions |
 
 ---
 
 ## Installation
 
-### Global Installation (Recommended)
+### Global Installation
 
-Install Prompto globally to use it from anywhere in your terminal:
+Install Prompto globally for system-wide access:
 
 ```bash
-npm install -g prompto-cli
+npm install -g prompto
 ```
 
-### Verify Installation
+### Verification
+
+Confirm successful installation:
 
 ```bash
-prompto --version
+prompto
 ```
 
-### Alternative: Local Installation
+### Local Installation
+
+For project-specific usage:
 
 ```bash
-npm install prompto-cli
+npm install prompto
 npx prompto
 ```
 
-### From Source
+### Build from Source
+
+Clone and install from repository:
 
 ```bash
 git clone https://github.com/yourusername/prompto.git
@@ -86,72 +76,77 @@ cd prompto
 npm install -g .
 ```
 
-### Requirements
+### System Requirements
 
-- **Node.js**: Version 12.0.0 or higher
-- **npm**: Version 6.0.0 or higher
+- Node.js 12.0.0 or higher
+- npm 6.0.0 or higher
 
 ---
 
 ## Usage
 
-### Basic Usage
+### Display Available Categories
 
-Display all available command categories:
+View all command categories:
 
 ```bash
 prompto
 ```
 
-### View Specific Category
+### Access Specific Category
 
-Display commands for a specific category:
+Display commands for a particular category:
 
 ```bash
 prompto <category>
 ```
 
-Replace `<category>` with any of the available categories listed below.
+Replace `<category>` with any supported category name.
 
 ---
 
-## Available Commands
+## Documentation
 
-Prompto currently supports the following command categories:
+### Available Command Categories
 
-### Core Development
+#### Development Tools
 
-| Command | Category | Commands Included |
-|---------|----------|-------------------|
-| `prompto github` | **Git/GitHub** | init, clone, commit, push, pull, branch, merge, stash, etc. |
-| `prompto node` | **Node.js** | Running scripts, version checks, NPX commands |
+| Command | Description | Total Commands |
+|---------|-------------|----------------|
+| `prompto github` | Git version control and GitHub operations | 20 |
+| `prompto node` | Node.js runtime and NPX utilities | 9 |
 
-### Package Managers
+#### Package Management
 
-| Command | Category | Commands Included |
-|---------|----------|-------------------|
-| `prompto npm` | **NPM** | install, init, update, publish, audit, scripts |
-| `prompto pnpm` | **PNPM** | install, add, remove, update, store management |
-| `prompto yarn` | **Yarn** | install, add, remove, upgrade, scripts |
+| Command | Description | Total Commands |
+|---------|-------------|----------------|
+| `prompto npm` | Node Package Manager operations | 18 |
+| `prompto pnpm` | Performant NPM alternative | 14 |
+| `prompto yarn` | Facebook's package manager | 9 |
 
-### DevOps & Containers
+#### Containers & DevOps
 
-| Command | Category | Commands Included |
-|---------|----------|-------------------|
-| `prompto docker` | **Docker** | build, run, ps, stop, logs, compose, exec |
+| Command | Description | Total Commands |
+|---------|-------------|----------------|
+| `prompto docker` | Container management and orchestration | 14 |
 
-### Languages & Tools
+#### Programming Languages
 
-| Command | Category | Commands Included |
-|---------|----------|-------------------|
-| `prompto python` | **Python/Pip** | pip install, virtual environments, requirements |
-| `prompto system` | **System** | Navigation, file operations, directory management |
+| Command | Description | Total Commands |
+|---------|-------------|----------------|
+| `prompto python` | Python interpreter and pip package manager | 10 |
+
+#### Operating System
+
+| Command | Description | Total Commands |
+|---------|-------------|----------------|
+| `prompto system` | File system and directory operations | 10 |
 
 ---
 
-## Examples
+## Command Examples
 
-### Example 1: Git Commands
+### Git Commands Reference
 
 ```bash
 $ prompto github
@@ -174,10 +169,12 @@ Git/GitHub Commands
 
  5. git commit -m "message"
     Commit staged changes
-...
+
+ 6. git push
+    Push commits to remote repository
 ```
 
-### Example 2: NPM Commands
+### NPM Commands Reference
 
 ```bash
 $ prompto npm
@@ -193,11 +190,13 @@ NPM Commands
     Install all dependencies
 
  3. npm install <package>
-    Install a package
-...
+    Install a specific package
+
+ 4. npm install -D <package>
+    Install as development dependency
 ```
 
-### Example 3: Docker Commands
+### Docker Commands Reference
 
 ```bash
 $ prompto docker
@@ -206,218 +205,230 @@ Docker Commands
 
 ──────────────────────────────────────────────────────────────────────
 
- 1. docker build -t <n> .
+ 1. docker build -t <name> .
     Build image from Dockerfile
 
  2. docker run <image>
-    Run a container
+    Run a container from image
 
  3. docker ps
     List running containers
-...
+
+ 4. docker stop <container>
+    Stop a running container
 ```
 
 ---
 
 ## Development
 
-### Setup Development Environment
+### Environment Setup
 
-Clone and set up the project:
+Initialize development environment:
 
 ```bash
-# Clone the repository
 git clone https://github.com/yourusername/prompto.git
 cd prompto
-
-# Install as global package for testing
 npm install -g .
-
-# Test the CLI
-prompto
-prompto github
 ```
 
-### Project Structure
+### Project Architecture
 
 ```
 prompto/
-├── index.js          # Main CLI application
-├── package.json      # Package configuration
-├── README.md         # Documentation
-├── LICENSE           # MIT License
-└── .gitignore        # Git ignore rules
+├── index.js          # Main application entry point
+├── package.json      # Package metadata and dependencies
+├── README.md         # Project documentation
+├── LICENSE           # MIT License text
+└── .gitignore        # Git exclusion rules
 ```
 
-### Adding New Commands
+### Extending Command Categories
 
-To add a new command category, edit `index.js`:
+Add new categories by modifying the commands object in `index.js`:
 
 ```javascript
-commands.yourcategory = {
-  name: 'Your Category Name',
+commands.categoryname = {
+  name: 'Category Display Name',
   commands: [
-    { cmd: 'your command', desc: 'Description of what it does' },
-    { cmd: 'another command', desc: 'Another description' }
+    { cmd: 'command syntax', desc: 'Brief description of functionality' },
+    { cmd: 'another command', desc: 'Another command description' }
   ]
 };
 ```
 
-### Testing
+### Local Testing
+
+Test modifications locally:
 
 ```bash
-# Run the CLI locally
 node index.js
-
-# Test specific category
-node index.js github
+node index.js <category>
 ```
+
+### Code Standards
+
+- Maintain 2-space indentation
+- Document complex logic with inline comments
+- Ensure descriptions are clear and concise
+- Test across multiple operating systems when possible
 
 ---
 
 ## Contributing
 
-Contributions are welcome and appreciated! Here's how you can help:
+### Contribution Types
 
-### Ways to Contribute
+- Bug reports and issue documentation
+- New command category suggestions
+- Documentation improvements
+- Feature implementations
+- Bug fixes and optimizations
 
-- Report bugs and issues
-- Suggest new command categories
-- Improve documentation
-- Add new features
-- Fix bugs and issues
+### Submission Process
 
-### Contribution Guidelines
+**Step 1: Fork Repository**
+```bash
+# Use GitHub's fork functionality
+```
 
-1. **Fork the repository**
-   ```bash
-   # Click the 'Fork' button on GitHub
-   ```
+**Step 2: Create Feature Branch**
+```bash
+git checkout -b feature/descriptive-name
+```
 
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
+**Step 3: Implement Changes**
+- Follow established code patterns
+- Maintain consistent formatting
+- Test thoroughly before committing
 
-3. **Make your changes**
-   - Follow existing code style
-   - Add clear command descriptions
-   - Test your changes locally
+**Step 4: Commit Changes**
+```bash
+git commit -m 'Brief description of changes'
+```
 
-4. **Commit your changes**
-   ```bash
-   git commit -m 'Add some AmazingFeature'
-   ```
+**Step 5: Push to Remote**
+```bash
+git push origin feature/descriptive-name
+```
 
-5. **Push to your branch**
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
+**Step 6: Submit Pull Request**
+- Provide detailed description of modifications
+- Link related issues if applicable
+- Respond to review feedback promptly
 
-6. **Open a Pull Request**
-   - Provide clear description of changes
-   - Reference any related issues
+### Category Proposal Guidelines
 
-### Code Style
+When proposing new command categories, include:
 
-- Use consistent indentation (2 spaces)
-- Add descriptive comments for complex logic
-- Keep command descriptions concise and clear
-- Test on multiple platforms if possible
-
-### Suggesting New Categories
-
-When suggesting new command categories, please include:
-- Category name
-- At least 10 commonly used commands
-- Clear, concise descriptions for each command
-- Use cases or target audience
+- Precise category name and scope
+- Minimum of 10 frequently used commands
+- Clear, actionable descriptions for each command
+- Target user base and use cases
+- Justification for inclusion
 
 ---
 
-## Changelog
+## Version History
 
-### v1.0.0 (2025-01-XX)
+### Version 1.0.0
 
-**Initial Release**
+**Release Date**: January 2025
 
-- Added Git/GitHub commands (20 commands)
-- Added NPM commands (18 commands)
-- Added PNPM commands (14 commands)
-- Added Docker commands (14 commands)
-- Added Node.js commands (9 commands)
-- Added Yarn commands (9 commands)
-- Added Python/Pip commands (10 commands)
-- Added System commands (10 commands)
-- Clean, numbered command output
-- Cross-platform support
-- Zero dependencies
+**Initial Release Features**:
+
+- Git/GitHub command reference (20 entries)
+- NPM package manager commands (18 entries)
+- PNPM package manager commands (14 entries)
+- Docker container commands (14 entries)
+- Node.js runtime commands (9 entries)
+- Yarn package manager commands (9 entries)
+- Python/Pip commands (10 entries)
+- System operation commands (10 entries)
+- Formatted command output with numbering
+- Full cross-platform support
+- Zero external dependencies
 
 ---
 
 ## License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is released under the MIT License. See the [LICENSE](LICENSE) file for complete terms.
 
 ```
 MIT License
 
-Copyright (c) 2025 Your Name
+Copyright (c) 2025 [Your Name]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software")...
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
 
 ---
 
-## Support
+## Support & Resources
 
-### Get Help
+### Documentation
 
-- [Read the Documentation](https://github.com/yourusername/prompto#readme)
-- [Report Issues](https://github.com/yourusername/prompto/issues)
-- [Start a Discussion](https://github.com/yourusername/prompto/discussions)
+- [Complete Documentation](https://github.com/yourusername/prompto#readme)
+- [Issue Tracker](https://github.com/yourusername/prompto/issues)
+- [Discussion Forum](https://github.com/yourusername/prompto/discussions)
 
-### Show Your Support
+### Community
 
-If Prompto has helped you, please consider:
-
-- **Star this repository** on GitHub
-- **Share it** on social media
-- **Write a blog post** about it
-- **Buy me a coffee** (if you'd like to add donation link)
-
-### Connect
-
-- **Author**: Your Name
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **Twitter**: [@yourtwitter](https://twitter.com/yourtwitter)
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- **Repository**: [github.com/yourusername/prompto](https://github.com/yourusername/prompto)
+- **Package Registry**: [npmjs.com/package/prompto](https://www.npmjs.com/package/prompto)
+- **Author**: [Your Name]
+- **Email**: your.email@example.com
 - **Website**: [yourwebsite.com](https://yourwebsite.com)
 
+### Recognition
+
+If you find Prompto useful, please consider:
+
+- Starring the repository on GitHub
+- Sharing with fellow developers
+- Contributing improvements or new features
+- Providing feedback and suggestions
+
 ---
 
-## Acknowledgments
-
-- Inspired by the need for quick command references
-- Built with care for the developer community
-- Thanks to all contributors and users
-
----
-
-## Stats
+## Project Statistics
 
 ![GitHub stars](https://img.shields.io/github/stars/yourusername/prompto?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/yourusername/prompto?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/yourusername/prompto)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/prompto)
+![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/prompto)
+![NPM Downloads](https://img.shields.io/npm/dw/prompto)
+
+---
+
+## Acknowledgments
+
+This project was developed to address the common challenge of command recall in modern software development workflows. Special thanks to the open-source community for inspiration and support.
 
 ---
 
 <div align="center">
 
-**Made with care by developers, for developers**
+**Prompto** - Streamline your development workflow
 
-[Back to Top](#prompto-cli)
+[Back to Top](#prompto)
 
 </div>
