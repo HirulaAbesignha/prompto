@@ -1,0 +1,15 @@
+node_modules/
+
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+*.log
+npm-debug.log*
+
+coverage/
+.nyc_output/
