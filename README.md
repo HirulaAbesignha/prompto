@@ -331,7 +331,7 @@ When proposing new command categories, include:
 
 ## Version History
 
-### Version 1.0.0
+### Version 1.0.1
 
 **Release Date**: September 2025
 
