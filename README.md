@@ -71,7 +71,7 @@ npx prompto
 Clone and install from repository:
 
 ```bash
-git clone https://github.com/yourusername/prompto.git
+git clone https://github.com/HirulaAbesignha/prompto.git
 cd prompto
 npm install -g .
 ```
@@ -227,7 +227,7 @@ Docker Commands
 Initialize development environment:
 
 ```bash
-git clone https://github.com/yourusername/prompto.git
+git clone https://github.com/HirulaAbesignha/prompto.git
 cd prompto
 npm install -g .
 ```
@@ -333,7 +333,7 @@ When proposing new command categories, include:
 
 ### Version 1.0.0
 
-**Release Date**: January 2025
+**Release Date**: September 2025
 
 **Initial Release Features**:
 
@@ -355,43 +355,19 @@ When proposing new command categories, include:
 
 This project is released under the MIT License. See the [LICENSE](LICENSE) file for complete terms.
 
-```
-MIT License
-
-Copyright (c) 2025 [Your Name]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
 ---
 
 ## Support & Resources
 
 ### Documentation
 
-- [Complete Documentation](https://github.com/yourusername/prompto#readme)
-- [Issue Tracker](https://github.com/yourusername/prompto/issues)
-- [Discussion Forum](https://github.com/yourusername/prompto/discussions)
+- [Complete Documentation](https://github.com/HirulaAbesignha/prompto#readme)
+- [Issue Tracker](https://github.com/HirulaAbesignha/prompto/issues)
+- [Discussion Forum](https://github.com/HirulaAbesignha/prompto/discussions)
 
 ### Community
 
-- **Repository**: [github.com/yourusername/prompto](https://github.com/yourusername/prompto)
+- **Repository**: [github.com/HirulaAbesignha/prompto](https://github.com/HirulaAbesignha/prompto)
 - **Package Registry**: [npmjs.com/package/prompto](https://www.npmjs.com/package/prompto)
 - **Author**: [Your Name]
 - **Email**: your.email@example.com
@@ -405,17 +381,6 @@ If you find Prompto useful, please consider:
 - Sharing with fellow developers
 - Contributing improvements or new features
 - Providing feedback and suggestions
-
----
-
-## Project Statistics
-
-![GitHub stars](https://img.shields.io/github/stars/yourusername/prompto?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/prompto?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/prompto)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/prompto)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/prompto)
-![NPM Downloads](https://img.shields.io/npm/dw/prompto)
 
 ---
 
