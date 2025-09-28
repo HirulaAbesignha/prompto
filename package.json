@@ -1,40 +1,40 @@
 {
     "name": "dev-prompto",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Command reference tool for developers",
     "main": "index.js",
     "bin": {
-      "prompto": "./index.js"
+        "prompto": "./index.js"
     },
     "scripts": {
-      "test": "node index.js"
+        "test": "node index.js"
     },
     "keywords": [
-      "cli",
-      "commands",
-      "reference",
-      "git",
-      "github",
-      "npm",
-      "pnpm",
-      "docker",
-      "node",
-      "cheatsheet",
-      "developer-tools",
-      "command-line",
-      "terminal"
+        "cli",
+        "commands",
+        "reference",
+        "git",
+        "github",
+        "npm",
+        "pnpm",
+        "docker",
+        "node",
+        "cheatsheet",
+        "developer-tools",
+        "command-line",
+        "terminal"
     ],
     "author": "HirulaA besignha",
     "license": "MIT",
     "engines": {
-      "node": ">=12.0.0"
+        "node": ">=12.0.0"
     },
     "repository": {
-      "type": "git",
-      "url": "https://github.com/HirulaAbesignha/prompto.git"
+        "type": "git",
+        "url": "https://github.com/HirulaAbesignha/prompto.git"
     },
     "bugs": {
-      "url": "https://github.com/HirulaAbesignha/prompto/issues"
+        "url": "https://github.com/HirulaAbesignha/prompto/issues"
     },
     "homepage": "https://github.com/HirulaAbesignha/prompto#readme"
-  }
+}
